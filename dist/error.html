@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Error</title>
+   <link rel="shortcut icon" href="img/icons-app.png" type="image/x-icon">
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,0,0&_v=20251123224728">
+   <link rel="stylesheet" href="./css/style.min.css?_v=20251123224728">
+   <link rel="stylesheet" href="./css/media.min.css?_v=20251123224728">
+   <script>
+      if (!document.cookie) window.location.href = "index.html"
+   </script>
+</head>
+
+<body>
+   <div class="error-conteiner">
+      <div class="error-content">
+         <div class="content-image">
+            <picture><source srcset="img/error.webp" type="image/webp"><img src="img/error.png" alt="error"></picture>
+         </div>
+         <div class="content-info">
+            <h2 class="info-title">Ой, лишенько!</h2>
+            <h1 class="info-error"><span></span> Error</h1>
+            <h2 class="info-sub-title">Ми намагалися, але на сервері сталася помилка. Наступного разу ми зробимо краще!
+            </h2>
+         </div>
+      </div>
+   </div>
+   <script>
+      let cookie = document.cookie.match(/error=(.+?)(;|$)/)
+      if (cookie[1] !== "undefined") document.querySelector(".info-error span").textContent = cookie[1]
+   </script>
+</body>
+
+</html>

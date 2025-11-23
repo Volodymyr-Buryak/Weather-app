@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WHETHERSA</title>
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&_v=20251123224728" />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap&_v=20251123224728"
+      rel="stylesheet">
+   <link rel="shortcut icon" href="img/icons-app.png" type="image/x-icon">
+   <link rel="stylesheet" href="./css/style.min.css?_v=20251123224728">
+   <link rel="stylesheet" href="./css/media.min.css?_v=20251123224728">
+</head>
+
+<body>
+   <noscript>
+      <div class="noscript-container">
+         <div class="noscript-content">
+            <svg class="svg-javascript-dims">
+               <use xlink:href="img/icons/icons.svg#javascript"></use>
+            </svg>
+            <div class="noscript-info">
+               <h2 class="noscript-titel">
+                  Щоб сайт працював належним чином, увімкніть JavaScript !
+               </h2>
+            </div>
+         </div>
+      </div>
+   </noscript>
+   <div class="wrapper">
+      <div class="content">
+         <header class="header">
+            <div class="navigation">
+               <div class="logo">
+                  <h1>Прогноз на 7 днів</h1>
+               </div>
+               <nav class="nav">
+                  <ul>
+                     <li class="celsius">°C</li>
+                     <li class="fahrenheit">°F</li>
+                     <li class="them"><span class="material-symbols-outlined">light_mode</span></li>
+                  </ul>
+               </nav>
+
+            </div>
+            <div class="slider">
+               <div class="columns">
+               </div>
+            </div>
+         </header>
+         <main class="main">
+            <div class="main-titel">
+               <h2>Поточна погода</h2>
+            </div>
+            <div class="main-columns">
+               <div class="weather-column-info">
+                  <div class="weather-column-titel">УФ</div>
+                  <div class="weather-column-description">
+                     <div class="description-items">
+                        <div class="weather-column-image">
+                           <picture><source srcset="img/uv-index.webp" type="image/webp"><img src="img/uv-index.png" alt="uv-index"></picture>
+                        </div>
+                        <div class="weather-column-indicator " id="uv"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="weather-column-info">
+                  <div class="weather-column-titel ">Вітер, м/с</div>
+                  <div class="weather-column-description __wind-speed">
+                     <div class="description-items">
+                        <div class="weather-column-indicator" id="wind"></div>
+                        <div class="weather-column-image">
+                           <picture><source srcset="img/wind.webp" type="image/webp"><img src="img/wind.png" alt="wind"></picture>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="weather-column-info">
+                  <div class="weather-column-titel">Схід & Захід</div>
+                  <div class="weather-column-description">
+                     <div class="description-items __gap">
+                        <div class="weather-column-sunrise __sunrise-and-sunset">
+                           <svg class="svg-sunrise-dims">
+                              <use xlink:href="img/icons/icons.svg#sunrise"></use>
+                           </svg>
+                           <div class="weather-column-indicator sunrise" id="sunrise"></div>
+                        </div>
+                        <div class="weather-column-sunset __sunrise-and-sunset">
+                           <svg class="svg-sunset-dims">
+                              <use xlink:href="img/icons/icons.svg#sunset"></use>
+                           </svg>
+                           <div class="weather-column-indicator" id="sunset"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="weather-column-info">
+                  <div class="weather-column-titel">Вологість, %</div>
+                  <div class="weather-column-description __wind-speed">
+                     <div class="description-items">
+                        <div class="weather-column-indicator" id="humidity">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="weather-column-info">
+                  <div class="weather-column-titel">Атмосферний тиск, гПа</div>
+                  <div class="weather-column-description __wind-speed">
+                     <div class="description-items">
+                        <div class="weather-column-indicator 
+                        " id="pressure"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="weather-column-info">
+                  <div class="weather-column-titel">Хмарність, %</div>
+                  <div class="weather-column-description __wind-speed">
+                     <div class="description-items">
+                        <div class="weather-column-indicator clouds" id="clouds">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+         </main>
+         <aside class="aside">
+            <div class="aside-content">
+               <div class="weather-search">
+                  <input type="text" placeholder="Населений пункт">
+                  <svg class="svg-geolocation-dims">
+                     <use xlink:href="img/icons/icons.svg#geolocation"></use>
+                  </svg>
+               </div>
+               <div class="aside-items">
+                  <div class="weather-image">
+                     <div class="weather-icon">
+                     </div>
+                     <div class="temperature"></div>
+                  </div>
+                  <div class="day-info">
+                     <div class="date-and-city">
+                        <div class="city"></div>
+                        <div class="date"></div>
+                     </div>
+                     <hr>
+                     <div class="weather-description">
+                        <svg class="svg-weather-dims">
+                           <use xlink:href="img/icons/icons.svg#weather"></use>
+                        </svg>
+                        <span class="description"></span>
+                     </div>
+                     <div class="time">
+                        <svg class="svg-time-dims">
+                           <use xlink:href="img/icons/icons.svg#time"></use>
+                        </svg><span class="time"></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </aside>
+      </div>
+   </div>
+   <script src="https://momentjs.com/downloads/moment-with-locales.min.js?_v=20251123224728"></script>
+   <script src="https://momentjs.com/downloads/moment-timezone-with-data-10-year-range.min.js?_v=20251123224728"></script>
+   <script src="./js/app.min.js?_v=20251123224728"></script>
+</body>
+
+</html>
